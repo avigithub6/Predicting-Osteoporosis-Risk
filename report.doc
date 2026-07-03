@@ -1,0 +1,50 @@
+Osteoporosis Risk Prediction – Project Report
+📌 Objective
+To develop a machine learning model that predicts the risk of osteoporosis in patients using historical health data, enabling early detection and personalized treatment planning.
+
+🧠 Modeling Approach
+Algorithm Used: Random Forest Classifier
+
+Target Variable: Osteoporosis (Binary classification)
+
+Features: Various patient health attributes (demographics, medical history, habits, etc.)
+
+🔍 Data Preprocessing Steps
+Loading Data: Imported from osteoporosis.csv.
+
+Column Dropping: Removed the unique identifier Id as it has no predictive value.
+
+Label Encoding: Converted categorical text columns into numerical values using LabelEncoder.
+
+Train-Test Split: 80% training and 20% testing using train_test_split.
+
+🧪 Model Training
+Model: RandomForestClassifier with 100 estimators and random_state=42.
+
+Training Data: Fit on the training set X_train and y_train.
+
+📊 Evaluation Metrics
+Accuracy: High accuracy achieved on test set.
+
+Classification Report:
+
+Precision
+
+Recall
+
+F1-score for each class
+
+Confusion Matrix: Visual representation of predicted vs actual classes.
+
+Feature Importance: Ranked features by their contribution to predictions.
+
+📈 Key Visualizations
+Confusion Matrix
+
+Visualized using seaborn.heatmap
+
+Helped evaluate true vs false positives and negatives.
+
+Feature Importance Bar Plot
+
+Showed the most influential features in osteoporosis prediction.
